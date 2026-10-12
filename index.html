@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Alvaro Saire · Ingeniería de Sistemas, Ciclo 5</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#05070D;--ink:#E6F1FF;--mute:#8FA6C0;--card:#0C1424;--line:#1B2B45;--acc:#4DB8FF;--accbg:#0F2A47;color-scheme:dark;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Public Sans",system-ui,sans-serif}
+main{max-width:920px;margin:0 auto;padding:56px 22px 72px}
+h1,h2,h3{font-family:"Bricolage Grotesque","Public Sans",system-ui,sans-serif;line-height:1.1;margin:0}
+h1{font-size:clamp(2.6rem,8vw,4.6rem);font-weight:800;letter-spacing:-.03em}
+h2{font-size:1.7rem;font-weight:700;letter-spacing:-.02em;margin:64px 0 8px}
+.lead{font-size:1.15rem;color:var(--mute);max-width:56ch;margin:18px 0 22px}
+.sub{color:var(--mute);margin:0 0 24px;max-width:60ch}
+a{color:var(--acc);text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--acc);outline-offset:3px;border-radius:4px}
+.links{display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-block;padding:10px 18px;border-radius:999px;border:1.5px solid var(--ink);color:var(--ink);text-decoration:none;font-weight:600;font-size:.95rem}
+.btn.p{background:var(--acc);border-color:var(--acc);color:#04101F}
+.btn:hover{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.chain{display:grid;gap:14px}
+.course{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--acc);border-radius:10px;padding:20px 22px}
+.course h3{font-size:1.25rem;font-weight:700}
+.meta{color:var(--mute);font-size:.9rem;margin:6px 0 10px}
+.req{display:inline-block;background:var(--accbg);color:var(--acc);font-size:.85rem;font-weight:600;padding:2px 10px;border-radius:6px;margin-bottom:10px}
+.course p{margin:0;max-width:62ch}
+.proj{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.pcard{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px}
+.pcard h3{font-size:1.1rem;margin-bottom:6px;word-break:break-word}
+.pcard p{margin:0 0 12px;color:var(--mute);font-size:.95rem}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin:0;padding:0;list-style:none}
+.tags li{border:1px solid var(--line);border-radius:6px;padding:3px 10px;font-size:.88rem}
+footer{margin-top:64px;padding-top:20px;border-top:1px solid var(--line);color:var(--mute);font-size:.9rem}
+</style>
+</head>
+<body>
+<main>
+<h1>Alvaro Saire</h1>
+<p class="lead">Estudiante de Ingeniería de Sistemas en la Universidad de Lima, cursando el 5.º ciclo. Este es el mapa de lo que estoy aprendiendo y de lo que ya construí.</p>
+<div class="links">
+<a class="btn p" href="https://github.com/alvarosaire" target="_blank" rel="noopener">GitHub</a>
+<a class="btn" href="https://www.linkedin.com/in/alvaro-rodrigo-saire-estrada-4296b5210" target="_blank" rel="noopener">LinkedIn</a>
+<a class="btn" href="mailto:20245943@aloe.ulima.edu.pe">20245943@aloe.ulima.edu.pe</a>
+</div>
+
+<h2>Lo que curso en 2026-2</h2>
+<p class="sub">Cuatro cursos, 15 créditos. Cada uno se apoya en uno anterior de la malla, por eso indico de dónde viene.</p>
+<div class="chain">
+<article class="course"><h3>Sistemas Operativos</h3>
+<div class="meta">4 créditos · 6 horas semanales</div><span class="req">Viene de Arquitectura de Computadoras</span>
+<p>Cómo un sistema administra procesos, memoria y archivos, y cómo se reparte el procesador entre programas.</p></article>
+<article class="course"><h3>Estadística Aplicada</h3>
+<div class="meta">4 créditos · 5 horas semanales</div><span class="req">Viene de Estadística y Probabilidad</span>
+<p>Inferencia y análisis de datos para tomar decisiones con evidencia. Base del curso de Machine Learning del ciclo 7.</p></article>
+<article class="course"><h3>Investigación de Operaciones I</h3>
+<div class="meta">4 créditos · 4 horas semanales</div><span class="req">Viene de Cálculo III</span>
+<p>Modelos matemáticos de optimización, como la programación lineal, para decidir cómo usar recursos limitados.</p></article>
+<article class="course"><h3>Gestión Financiera</h3>
+<div class="meta">3 créditos · 4 horas semanales</div><span class="req">Viene de Costeo de Operaciones</span>
+<p>Cómo evaluar y decidir sobre el dinero de una empresa: análisis financiero, costo del capital y evaluación de inversiones.</p></article>
+</div>
+
+<h2>Proyectos</h2>
+<p class="sub">Mi trabajo público en GitHub.</p>
+<div class="proj">
+<div class="pcard"><h3>app-pelicula-definitiva</h3><p>Aplicación web hecha con Angular y TypeScript.</p>
+<ul class="tags"><li>Angular</li><li>TypeScript</li></ul><p style="margin:12px 0 0"><a href="https://github.com/alvarosaire/app-pelicula-definitiva" target="_blank" rel="noopener">Ver código</a></p></div>
+<div class="pcard"><h3>app-pelicula-definitiva-cliente</h3><p>Parte cliente de la aplicación de películas.</p>
+<ul class="tags"><li>TypeScript</li></ul><p style="margin:12px 0 0"><a href="https://github.com/alvarosaire/app-pelicula-definitiva-cliente" target="_blank" rel="noopener">Ver código</a></p></div>
+<div class="pcard"><h3>hello-git</h3><p>Mis primeras prácticas con Git y control de versiones.</p>
+<ul class="tags"><li>Python</li><li>Git</li></ul><p style="margin:12px 0 0"><a href="https://github.com/alvarosaire/hello-git" target="_blank" rel="noopener">Ver código</a></p></div>
+</div>
+
+<h2>Herramientas</h2>
+<ul class="tags"><li>Python</li><li>TypeScript</li><li>Angular</li><li>Git y GitHub</li></ul>
+
+<footer>Universidad de Lima · Facultad de Ingeniería · Carrera de Ingeniería de Sistemas, plan 2026-1</footer>
+</main>
+</body>
+</html>
